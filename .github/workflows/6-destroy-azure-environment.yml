@@ -10,7 +10,7 @@ on:
   workflow_run:
     workflows: ["Configure Azure environment"]
     types: [completed]
-    branches: [production-deployment-workflow]
+    branches: [production-deployment-workflow, main]
 
 permissions:
   # Need `contents: read` to checkout the repository.
