@@ -7,6 +7,11 @@ name: Step 3, Spin up environment
 # Reference: https://docs.github.com/en/actions/learn-github-actions/events-that-trigger-workflows
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - azure-configuration
+    paths:
+      - .github/workflows/spinup-destroy.yml
   workflow_run:
     workflows: ["Configure Azure environment"]
     types: [completed]
