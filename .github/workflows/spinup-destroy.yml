@@ -63,3 +63,5 @@ jobs:
           az group delete --name ${{env.AZURE_RESOURCE_GROUP}} --subscription ${{secrets.AZURE_SUBSCRIPTION_ID}} --yes
 
 # step3 trigger
+
+# step3 workflow trigger 2
